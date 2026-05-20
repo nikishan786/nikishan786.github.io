@@ -7,30 +7,36 @@ img {
     display: block;
 }
 
+body {
+    background-color: rgb(244, 241, 234);
+}
+
 div.container, div.home-container {
     max-width: 40em;
     margin: auto;
 }
 
 figcaption {
-    font-family: sans-serif;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
     font-style: italic;
-    color: rgb(85, 85, 85);
+    color: rgb(150, 150, 150);
     margin: 0.5em;
     margin-bottom: 1.5em;
 }
 
 h1 {
 font-family: serif;
-width: 7em;
+width: 12em;
 margin: 1em 0.5em;
 }
 
 h2 {
-    font-family: serif;
+    font-family: cheddar-gothic-rough, sans-serif;
+    font-weight: 400;
+    font-style: regular;
     font-size: 3em;
-    color: rgb(85, 119, 153);
-    font-weight: 700;
+    color: rgb(181, 53, 45);
     margin: 0.2em;
 }
 
@@ -51,8 +57,10 @@ aside h2 {
 }
 
 p {
-    font-family:sans-serif;
-    color: rgb(39, 39, 39);
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(100, 100, 100);
     line-height: 1.35em;
     margin: 0.2em 0.5em 2em;
 }
@@ -76,31 +84,32 @@ ul li{
 }
 
 nav a {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: rgb(76, 115, 167);
-    font-weight: 700;
+    font-family: cheddar-gothic-rough, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    color: rgb(116, 146, 113);
 }
 
 .tertiarystory {
-    border-top: 1px solid rgb(85, 119, 153);
+    border-top: 1px solid rgb(235, 164, 65);
     margin: 1em 0.5em;
 }
 
 aside {
-    background-color: rgb(203, 206, 253);
+    /* background-color: rgb(203, 206, 253); */
     padding: 1em 0.5em;
 }
 
 footer{
-    background-color: rgb(96, 118, 150);
+    background-color: rgb(47, 62, 86);
     padding: 0.5em;
     box-sizing: border-box;
 }
 
 footer p{
     font-family: sans-serif;
-    color: rgb(236, 236, 237);
+    color: rgb(244, 241, 234);
     padding-top: 0.3em;
     margin: 0;
 }
@@ -175,7 +184,7 @@ footer p{
     }
 
     section.mainstory a figure img {
-        object-fit: cover;
+        object-fit: cover; 
     }
 
     section.mainstory a h2 {
@@ -211,7 +220,7 @@ footer p{
 
     section.secondarystory a p {
         flex: 0 0 4em;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     section.tertiarystory {
