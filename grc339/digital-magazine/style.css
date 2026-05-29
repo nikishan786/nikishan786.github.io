@@ -26,9 +26,9 @@ figcaption {
 }
 
 h1 {
-font-family: serif;
-width: 12em;
-margin: 1em 0.5em;
+    font-family: serif;
+    width: 12em;
+    margin: 1em 0.5em;
 }
 
 h2 {
@@ -36,6 +36,15 @@ h2 {
     font-weight: 400;
     font-style: regular;
     font-size: 3em;
+    color: rgb(181, 53, 45);
+    margin: 0.2em;
+}
+
+h3 {
+    font-family: cheddar-gothic-rough, sans-serif;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 1.8em;
     color: rgb(181, 53, 45);
     margin: 0.2em;
 }
@@ -112,6 +121,124 @@ footer p{
     color: rgb(244, 241, 234);
     padding-top: 0.3em;
     margin: 0;
+}
+
+div.photogallery {
+    max-width: 60em;
+    margin: 0 auto; 
+}
+
+main.photogallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(66% + 5em);
+}
+
+main.photogallery figure {
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
+input:nth-of-type(10):checked ~ main figure:nth-of-type(10){
+    opacity: 1;
+}
+
+nav.photogallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.2em;
+    padding-bottom: 1em;
+}
+
+nav.photogallery label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+input[type="radio"] {
+    display: none;
+}
+
+main.newsletter {
+    padding: 1em;
+}
+
+main.newsletter section {
+    width: 100%;
+    max-width: 32em;
+}
+
+main.newsletter form ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+main.newsletter form ul li {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.5em;
+}
+
+main.newsletter ul li label {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(100, 100, 100);
+    margin: 0.5em 0em;
+}
+
+main.newsletter section ul li input[type="text"],
+main.newsletter section ul li input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid rgb(200, 200, 200);
+    box-sizing: border-box;
+    font-family: "neue-haas-unica", sans-serif;
+    font-size: 0.8em;
+}
+
+main.newsletter .interests ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+}
+
+main.newsletter .interests li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5em;
+    padding-bottom: 0;
+    gap: 0.2em;
+}
+
+main.newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 164, 65); /* rgb(116, 146, 113); */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5em 1.5em;
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 40em) {
