@@ -354,3 +354,28 @@ main.newsletter button {
         margin-top: 0;
     }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body {
+        background-color: rgb(22, 22, 22);
+    }
+
+    h1 {
+        background-image: url("theyorker-logo-alt.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 img {
+        opacity: 0;
+    }
+
+    p, a, main.newsletter label, main.newsletter .interests label, main.newsletter .contact label  {
+        color: rgb(227, 224, 217);
+    }
+
+    main.newsletter input::placeholder {
+        color: rgb(160, 160, 160);
+    } 
+} 
